@@ -1,19 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap&family=Sansita+Swashed&display=swap');
 
+* {
+    background-color: #121212;
+}
+
+p, h2, h3 {
+    background-color: transparent;
+}
+
 body {
     margin: 0;
 }
 
 .mainbody {
-    height: 100%;
-    max-height: fit-content;
-    background-color: #121212;
+    min-height: 100%;
+    height: fit-content;
 }
 
 .mainfooter {
     border-top: 1px solid white;
     height: 20%;
-    background-color: #212121;
+}
+
+.select {
+    -webkit-user-select: text; /* Safari */        
+    -moz-user-select: text; /* Firefox */
+    -ms-user-select: text; /* IE10+/Edge */
+    user-select: text; /* Standard */
 }
 
 .title {
@@ -48,11 +61,12 @@ body {
       transform: translateX(0);
       opacity: 1;
     }
-  }
+}
 
 @keyframes SwitchAnim {
     0% {
         opacity: 0;
+        
     }
     100% {
         opacity: 1;
