@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap&family=Sansita+Swashed&display=swap');
+
+* {
+    background-color: #121212;
+    color: white;
+}
+
+.returnarea {
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+}
+
+/*button that is centered both horizontally and vertically with styling*/
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+p, h1, h2, h3 {
+    font-family: 'Smooch Sans', sans-serif;
+    font-weight: 100;
+}
+
+.trackerinput {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* Horizontal center w/ flexbox (Use as parent)*/
+.flexcontainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+/* Horizontal center w/o flexbox */
+.c {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Class to make child or child values unselectable*/
+.noselect {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+/* Class to make child or child values selectable*/
+.selectable {
+    -webkit-user-select: text; /* Safari */        
+    -moz-user-select: text; /* Firefox */
+    -ms-user-select: text; /* IE10+/Edge */
+    user-select: text; /* Standard */
+}
