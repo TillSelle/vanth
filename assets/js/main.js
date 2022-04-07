@@ -1,7 +1,9 @@
-document.querySelector("#de").addEventListener("click", GermanAbout);
-document.querySelector("#en").addEventListener("click", EnglishAbout);
-document.querySelector("#legal").addEventListener("click", Legal);
-document.querySelector("#src").addEventListener("click", function() { window.open("https://github.com/TillSelle/vanth/", '_blank') })
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector("#de").addEventListener("click", GermanAbout);
+    document.querySelector("#en").addEventListener("click", EnglishAbout);
+    document.querySelector("#legal").addEventListener("click", Legal);
+    document.querySelector("#src").addEventListener("click", function() { window.open("https://github.com/TillSelle/vanth/", '_blank') })
+});
 
 function GermanAbout() {
     var newInner = "<h1 class=\"ptext whytitle\">Wer bin ich?</h1>";
@@ -22,8 +24,8 @@ function EnglishAbout() {
 function Legal() {
     var newInner = "<h1 class=\"ptext whytitle\">Impressum</h1>";
     newInner += "<p class=\"ptext abouttext\">";
-    newInner += "Till Selle<br>Andréstraße 25<br>09112 Chemnitz, Germany<br>Telefon: +49 173 5459726<br>Email: selle.till@gmail.com/admin@vanth.xyz<br><br>Hinweis gemäß Verbraucherstreitbeilegungsgesetz (VSBG)<br>Wir sind nicht bereit und verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.";
-    newInner += "<br>§ 1 Externe Links<br>Diese Website enthält Verknüpfungen zu Websites Dritter (\"externe Links\"). Diese Websites unterliegen derHaftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links diefremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keineRechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltungund auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich derAnbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle derexternen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. BeiKenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.<br>§ 2 Besondere Nutzungsbedingungen<br>Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den vorgenanntenParagraphen abweichen, wird an entsprechender Stelle ausdrücklich darauf hingewiesen. In diesem Fallegelten im jeweiligen Einzelfall die besonderen Nutzungsbedingungen";
+    newInner += "Angaben gem. § 5 TMG<br>Till Selle<br>Andréstraße 25<br>09112 Chemnitz, Germany<br>Telefon: +49 (0)173 5459726<br>Email: selle.till@gmail.com/admin@vanth.xyz<br><br>Im normalfall werden bei uns weder Daten noch Cookies gespeichert. Anders sieht es jedoch auf den Seiten \"vanth.xyz/Tracking/*\" aus. Wer diese Seiten aufruft muss unter umständen damit rechnen das folgende Daten hinterlegt werden: IP Adresse des Nutzers, Zeitangabe des Zugriffs und der User-Agent. Dazu werden Cookies zum Login verwendet. Es werden keine Cookies zu irgenwelchen anderen Zwecken gespeichert.<br>";
+    newInner += "<br>§ 1 Externe Links<br>Diese Website enthält Verknüpfungen zu Websites Dritter (\"externe Links\"). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links diefremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltungund auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.";
     newInner += "</p>";
     document.querySelector("#aboutme").innerHTML = newInner;
 }
