@@ -6,9 +6,11 @@
 }
 
 .returnarea {
-    width: 50vw;
-    height: 50vh;
+    width: fit-content;
+    height: fit-content;
     margin: auto;
+    font-size: medium;
+    font-family: "Times New Roman", Times, serif;
 }
 
 /*button that is centered both horizontally and vertically with styling*/
